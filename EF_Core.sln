@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002_AppWihtMigration", "002
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "003_OneToMany", "003_OneToMany\003_OneToMany.csproj", "{CA1947DA-2727-4153-83F4-9E742612DC81}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "004_NavigationProperties", "004_NavigationProperties\004_NavigationProperties.csproj", "{CB6D867C-A4B5-46B5-A8F0-C6350B891054}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "005_LazyLoadingExample", "005_LazyLoadingExample\005_LazyLoadingExample.csproj", "{91A63640-F403-4D54-AE9F-119C854216E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{CA1947DA-2727-4153-83F4-9E742612DC81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA1947DA-2727-4153-83F4-9E742612DC81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA1947DA-2727-4153-83F4-9E742612DC81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB6D867C-A4B5-46B5-A8F0-C6350B891054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB6D867C-A4B5-46B5-A8F0-C6350B891054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB6D867C-A4B5-46B5-A8F0-C6350B891054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB6D867C-A4B5-46B5-A8F0-C6350B891054}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91A63640-F403-4D54-AE9F-119C854216E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91A63640-F403-4D54-AE9F-119C854216E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91A63640-F403-4D54-AE9F-119C854216E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91A63640-F403-4D54-AE9F-119C854216E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
