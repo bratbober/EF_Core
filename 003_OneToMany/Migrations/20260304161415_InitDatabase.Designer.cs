@@ -11,7 +11,7 @@ using _003_OneToMany;
 namespace _003_OneToMany.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20260225165904_InitDatabase")]
+    [Migration("20260304161415_InitDatabase")]
     partial class InitDatabase
     {
         /// <inheritdoc />
@@ -39,6 +39,18 @@ namespace _003_OneToMany.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Title = "Tech"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Title = "Food"
+                        });
                 });
 
             modelBuilder.Entity("_003_OneToMany.Product", b =>
@@ -64,6 +76,29 @@ namespace _003_OneToMany.Migrations
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CategoryId = 1,
+                            Name = "TV",
+                            Price = 1000m
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CategoryId = 1,
+                            Name = "Tablet",
+                            Price = 2000m
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CategoryId = 2,
+                            Name = "Fish",
+                            Price = 300m
+                        });
                 });
 
             modelBuilder.Entity("_003_OneToMany.Product", b =>
